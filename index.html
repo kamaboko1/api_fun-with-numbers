@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" 
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<style>
+		html {
+			box-sizing: border-box;
+			color: #fff;
+		}
+
+		*:before,
+		*:after{
+			box-sizing: inherit;
+		}
+
+		.container{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+			grid-gap: 20px;
+		}
+
+		.numbers {
+			padding-left: 20px;
+		}
+
+		p {
+			padding-bottom: 15px;
+		}
+
+		input[type="number"]{
+			width: 230px;
+			height: 2em;
+			font-size: 1em;
+		}
+		input[type="input"]{
+			width: 230px;
+			height: 2em;
+			font-size: 1em;
+		}
+
+
+		#numbersFacts {
+			background: hsla(170, 75%, 35%, 1);
+		}
+
+		#numbersMath{
+			background: hsla(224, 65%, 45%, 0.85);
+		}
+
+		#numbersDate {
+			background: hsla(48, 75%, 35%, 0.85);
+		}
+	</style>
+
+	<title>Fun With Numbers</title>
+</head>
+<body>
+	<div class="container">
+		
+			<div id="numbersFacts" class="numbers">
+				<h3>Number Facts</h3>
+				<h4>Enter a number for an interesting number fact</h4>
+				<input type="number" id="numberFact">
+				<p id="outputFact"></p>
+			</div>
+
+			<div id="numbersMath" class="numbers">
+				<h3>Math Numbers</h3>
+				<h4>Enter a number for an intereting math fact</h4>
+				<input type="number" id="mathFact">
+				<p id="outputMath"></p>
+			</div>
+
+			<div id="numbersDate" class="numbers">
+				<h3>Dates</h3>
+				<h4>Enter month/day for an interesting date fact.</h4>
+				<input type="input" id="dateFact" placeholder="month/day">
+				<p id="outputDate"></p>
+			</div>
+
+	</div>
+<script src="js/init.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
